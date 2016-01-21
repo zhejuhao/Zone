@@ -1,0 +1,106 @@
+.div-style {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    margin-top: 10px;
+    display: block;
+}
+.head {
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    display: block;
+}
+.head-image{
+    height: inherit;
+    display: inline;
+    line-height: inherit;
+    float: left;
+    padding-left: 3%;
+
+}
+.head-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.person{
+    padding-left: 3%;
+    color: lightgray;
+    display: inline;
+    float: left;
+    font-size: 0.1em;
+    height: inherit;
+}
+.person p{
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: #60ABDC;
+    font-size: 0.5em;
+}
+.arrow{
+    float: right;
+    display: inline;
+    height: inherit;
+    padding-right: 3%;
+
+}
+.btn-arrow{
+    width: 10px;
+    height: 10px;
+    padding-top:  10px;
+}
+.content {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #717171;
+}
+
+.image-w {
+    max-height: 100%;
+    width: 100%;
+}
+
+.image-h {
+    max-height: 400px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    display: block;
+    background-color: lightgray;
+}
+.btn-left{
+    display: inline;
+    line-height: 30px;
+    width: 50%;
+}
+.image-btn-left {
+    width: 10px;
+    height: 10px;
+    margin-left: 5%;
+}
+.btn-right{
+    float: right;
+    display: inline;
+    line-height: 30px;
+    padding-right: 5%;
+    /*width: 50%;*/
+}
+.image-btn-right {
+    width: 20px;
+    height: 20px;
+    padding-left: 40px;
+    padding-top: 5px;
+}
