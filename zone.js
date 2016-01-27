@@ -33,7 +33,7 @@ function add_div(name) {
             div_head_image.innerHTML = "<img class='head-img' src='" + info.head + "'/> ";
             var div_name = document.createElement("div");
             div_name.className = "person";
-            div_name.innerHTML = "<p >" + name_i + "</p>"+"2小时以前";
+            div_name.innerHTML = "<p >" + name_i + "</p>" + "2小时以前";
             var div_arrow = document.createElement("div");
             div_arrow.className = "arrow";
             div_arrow.innerHTML = "<img class='btn-arrow' src= './image/arrow.png' />";
@@ -44,10 +44,12 @@ function add_div(name) {
             console.log(new_image.width);
             console.log(new_image.height);
             if (new_image.width >= new_image.height) {
-                div_image.innerHTML = "<img class='image-w' src= '" + info.image + "'/>";
+                div_image.innerHTML = "<img class='image-w'  onclick = 'open_img(" + '"' + info.image + '"' + ")'  src= '" + info.image + "'/>";
+                //div_image.setAttribute("picture",info.image);
+                console.log(info.image)
             }
             else {
-                div_image.innerHTML = "<img class='image-h' src= '" + info.image + "'/>";
+                div_image.innerHTML = "<img class='image-h'  onclick = 'open_img(" + '"' + info.image + '"' + ")' src= '" + info.image + "'/>";
             }
             var div_text = document.createElement("div");
             div_text.className = "content";
@@ -74,3 +76,15 @@ function add_div(name) {
     });
 
 }
+function open_img(picture) {
+    var div_big = document.getElementById("div-big");
+    div_big.style.display = "block";
+    div_big.innerHTML = "<span></span><img class='image-big' onclick = 'close_img()'  src= '" + picture + "' />";
+    document.body.style.overflow = "hidden";//滚动条消失
+}
+function close_img() {
+    var div_big = document.getElementById("div-big");
+    div_big.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+

@@ -1,18 +1,23 @@
+.div-info {
+    padding-top: 10px;
+}
+
 .div-style {
     list-style: none;
     width: 100%;
-    padding: 0;
     background-color: white;
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: block;
 }
+
 .head {
     height: 50px;
     border-bottom: 1px solid lightgray;
     width: 100%;
     display: block;
 }
-.head-image{
+
+.head-image {
     height: inherit;
     display: inline;
     line-height: inherit;
@@ -20,6 +25,7 @@
     padding-left: 3%;
 
 }
+
 .head-img {
     width: 40px;
     height: 40px;
@@ -27,32 +33,37 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.person{
-    padding-left: 3%;
+
+.person {
+    padding-left: 8px;
     color: lightgray;
     display: inline;
     float: left;
     font-size: 0.1em;
     height: inherit;
 }
-.person p{
+
+.person p {
     margin-top: 5px;
     margin-bottom: 6px;
     color: #60ABDC;
     font-size: 0.5em;
 }
-.arrow{
+
+.arrow {
     float: right;
     display: inline;
     height: inherit;
     padding-right: 3%;
 
 }
-.btn-arrow{
+
+.btn-arrow {
     width: 10px;
     height: 10px;
-    padding-top:  10px;
+    padding-top: 10px;
 }
+
 .content {
     display: block;
     width: 90%;
@@ -79,28 +90,51 @@
 body {
     margin: 0;
     display: block;
-    background-color: lightgray;
+    background-color: #EBEBEB;
 }
-.btn-left{
+
+.btn-left {
     display: inline;
     line-height: 30px;
     width: 50%;
 }
+
 .image-btn-left {
     width: 10px;
     height: 10px;
     margin-left: 5%;
 }
-.btn-right{
+
+.btn-right {
     float: right;
     display: inline;
     line-height: 30px;
     padding-right: 5%;
-    /*width: 50%;*/
 }
+
 .image-btn-right {
     width: 20px;
     height: 20px;
     padding-left: 40px;
     padding-top: 5px;
+}
+
+.big-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+}
+
+.image-big {
+    max-height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+span {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
